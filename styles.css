@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --color-dark: #355780;
+    --color-light:#99c9ff;
+    --color-white: #FFF;
+    --nav-height: 100px;
+    --title-height: 130px;
+    --min-br: 824px;
+    --max-br: 1096px;
+    --w-general: clamp(var(--min-br), 100%, var(--max-br));
+}
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+/* SECCIONES */
+
+.section:nth-child(even){
+    background-color: var(--color-white);
+}
+
+.section:nth-child(odd){
+    background-color: var(--color-dark);
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+    min-width: var(--min-br);
+    /* TEST LIMITES DE CAJA*/
+    border: 2px crimson solid;
+}
+
+/* SECCIONES > TITULOS */
+
+.section-title{
+    height: var(--title-height);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.section-title h2{
+    margin-top: 8px;
+    padding: 4px 40px;
+    bottom: 0;
+    display: inline-block;
+    border-radius: 20px 20px 0% 0%;
+}
+
+/* SECCIONES > CONTENEDORES */
+
+.container{
+    width: var(--w-general);
+    height: calc(100vh - var(--title-height));
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.in-header{
+    height: var(--nav-height);
+    width: 100%;
+    padding-top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--color-dark),transparent);
+    z-index: 100;
+
+}
+
+.header-container{
+    height: var(--nav-height);
+    width: var(--w-general);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER LOGO */
+
+.header-logo{
+    float: left;
+    margin-top: 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px black solid;
+    flex-shrink: 0;
+}
+
+.header-logo img{
+    height: 100%;
+    width: 100%;
+}
+
+/* HEADER NAV */
+
+.header-nav ul{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav ul li{
+    list-style: none;
+    padding: 5px 20px;
+    border-bottom: 1px var(--color-white) solid;
+}
+
+.header-nav ul li a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* SECCTION - BANNER */
+
+#in-banner{
+    height: 100vh;
+    width: 100%;
+    padding-top: var(--nav-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* BG IMAGE */
+    background-image: url(./img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-container{
+    border: 5px black solid;
+    height: 100%;
+    width: var(--w-general);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container img{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(228, 175, 155);
+    opacity: .3;
+}
+
+/* SECCION - DESTINOS */
+
+#destinations-title{
+    background-color: var(--color-white);
+}
+
+#destinations-title h2{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.destinations-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.destinations-container>*{
+    margin: 20px;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    color:var(--color-dark);
+}
+
+/* SECCION - SOBRE NOSOTROS */
+
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: var(--color-dark);
+}
+
+#about-title h2{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.about-top, .about-mid{
+    height: 40%;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: var(--color-dark);
+    text-align: center;
+    color:var(--color-light);
+}
+
+
+/* SECCION - RESEÑAS */
+
+#in-reviews{
+
+}
+
+#reviews-title{
+    background-color: var(--color-white);
+}
+
+#reviews-title h2{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.reviews-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews-container>*{
+    height: 80%;
+    width: 22%;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    text-align: center;
+    color:var(--color-dark);
+}
+
+
+/* SECCION - EQUIPO */
+
+#team-title{
+    background-color: var(--color-dark);
+}
+
+#team-title h2{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+/* FOOTER */
+
+.in-footer{
+    height: calc( 100vh - var(--nav-height));
+    width: 100%;
+    min-width: var(--min-br);
+    padding-bottom: var(--nav-height);
+    background-color:var(--color-dark);
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+/* CONTACTO */
+
+.footer-aside{
+    height: 90%;
+    width: 30%;
+    border: 5px #444 solid;
+}
+
+#footer-contact{
+    height: 90%;
+    padding-bottom: 0;
+    width: 70%;
+    border: 5px black solid;
+}  
+
+.footer-line {
+    margin-top: 50px;
+    height: 50px;
+    background-color: #222;
+}
