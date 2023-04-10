@@ -22,6 +22,7 @@
                     <li><a href="#in-reviews">RESEÑAS</a></li>
                     <li><a href="#in-team">EQUIPO</a></li>
                     <li><a href="#footer-contact">CONTACTO</a></li>
+                    <li><button id="open-modal-btn">RESERVA AHORA</button></li>
                 </ul>
             </nav>
         </div>    
@@ -67,5 +68,45 @@
         </div>
         <div class="footer-line"></div>
     </footer>
+    <!-- MODAL WINDOW -->
+	<div id="modal" class="modal">
+
+		<!-- MODAL CONTENT -->
+		<div class="modal-content">
+		<span class="close">&times;</span>
+		<form>
+			<!-- STEP 1 -->
+			<div id="step-1" class="step">
+			  <h2>Elige tu destino</h2>
+			  <label for="destination">Destino:</label>
+			  <select name="destination" id="destination">
+				<option value="bariloche">Bariloche</option>
+				<option value="calafate">Calafate</option>
+				<option value="mendoza">Mendoza</option>
+				<option value="ushuaia">Ushuaia</option>
+			  </select>
+			  <label for="arrival-date">Fecha de entrada:</label>
+			  <input type="date" name="arrival-date" id="arrival-date">
+			  <label for="departure-date">Fecha de salida:</label>
+			  <input type="date" name="departure-date" id="departure-date">
+			  <label for="guests">Cantidad de personas:</label>
+			  <input type="number" name="guests" id="guests">
+			</div>
+		  
+			<!-- STEP 2 -->
+			<div id="step-2" class="step">
+			  <h2>Ingresa tus datos personales</h2>
+			  <label for="name">Nombre:</label>
+			  <input type="text" name="name" id="name">
+			  <label for="email">Email:</label>
+			  <input type="email" name="email" id="email">
+			  <label for="phone">Teléfono:</label>
+			  <input type="tel" name="phone" id="phone">
+			  <button type="submit">Enviar</button>
+			</div>
+		  </form>
+		</div>
+	
+	</div>
 </body>
 </html>
