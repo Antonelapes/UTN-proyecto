@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <title>South Travel</title>
+    <title>Patagonia Wanderlust</title>
 </head>
 <body>
     <header class="in-header" id="in-header">
@@ -48,13 +48,116 @@
             <div class="about-mid"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at odit, labore ullam dolorem quasi neque, enim vitae cum dicta dolore sunt expedita quae sed officia animi deserunt mollitia maxime.</p></div>
         </div>
     </section>
+    <!-- SECCION RESEÑAS -->
     <section class="section" id="in-reviews">
-        <div class="section-title" id="reviews-title"><h2>Reseñas</h2></div>
-        <div class="container reviews-container">
-            <div class="reviews-1"></div>
-            <div class="reviews-2"></div>
-            <div class="reviews-3"></div>
-            <div class="reviews-4"></div>
+        <div class="section-title" id="rvw-title"><h2>Reseñas</h2></div>
+        <div class="container rvw-container">
+            <div class="rvw-top">
+                <!-- PUNTAJE TOTAL -->
+                <div class="rvw-tl">
+                    <div class="rvw-tl_score">4.8</div>
+                    <div class="rvw-tl_stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+                <!-- BARRAS DE PUNTAJE -->
+                <div class="rvw-bars">
+                    <div class="rvw-bars_item">
+                        <p>5</p><div class="rvw-star-bar" id="star5-bar"></div>
+                    </div>
+                    <div class="rvw-bars_item">
+                        <p>4</p><div class="rvw-star-bar" id="star4-bar"></div>
+                    </div>
+                    <div class="rvw-bars_item">
+                        <p>3</p><div class="rvw-star-bar" id="star3-bar"></div>
+                    </div>
+                    <div class="rvw-bars_item">
+                        <p>2</p><div class="rvw-star-bar" id="star2-bar"></div>
+                    </div>
+                    <div class="rvw-bars_item">
+                        <p>1</p><div class="rvw-star-bar" id="star1-bar"></div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="rvw-bot">
+                <!-- TARJETAS OPINIONES -->
+                <div class="rvw-bot_btn" id="rvw-bot_btn-left">&#60;</div>
+                <div class="rvw-bot_btn" id="rvw-bot_btn-right">&#62;</div>
+                <div class="rvw-card-container" id="rvw-card-container">
+                    <!-- TARJETA 1 -->
+                    <div class="rvw-card rvw-active" id="rvw-card1">
+                        <div class="rvw-card_photo">
+                            <img src="./img/profile1.png" alt="">
+                        </div>
+                        <div class="rvw-card_top">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="rvw-card_bot">
+                            <i class="bi bi-quote"></i><h4>Maria Trekking</h4>                            
+                            <p>"Excelente experiencia. Muy recomendable! Me dió la flexibilidad que necesitaba a la hora de elegir mis vacaciones."</p>
+                        </div>
+                    </div>
+                    <!-- TARJETA 2 -->
+                    <div class="rvw-card rvw-inactive" id="rvw-card2">
+                        <div class="rvw-card_photo">
+                            <img src="./img/profile2.png" alt="">
+                        </div>
+                        <div class="rvw-card_top">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="rvw-card_bot">
+                            <i class="bi bi-quote"></i><h4>Jorge Mount</h4>
+                            <p>"Inmejorable. 10 de 10! El personal muy agradable y siempre al servicio de lo que necesitabamos. Ya se donde reservar el año que viene jajajajaj."</p>
+                        </div>
+                    </div>
+                    <!-- TARJETA 3 -->
+                    <div class="rvw-card rvw-inactive" id="rvw-card3">
+                        <div class="rvw-card_photo">
+                            <img src="./img/profile3.png" alt="">
+                        </div>
+                        <div class="rvw-card_top">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="rvw-card_bot">
+                            <i class="bi bi-quote"></i><h4>Laura Mattioli</h4>
+                            <p>"Ojalá puedan agregar mas destinos el año que viene. Me encantaria conocer el norte y quedé satisfecha con ustedes."</p>
+                        </div>
+                    </div>
+                    <!-- TARJETA 4 -->
+                    <div class="rvw-card rvw-inactive" id="rvw-card4">
+                        <div class="rvw-card_photo">
+                            <img src="./img/profile4.png" alt="">
+                        </div>
+                        <div class="rvw-card_top">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div class="rvw-card_bot">
+                            <i class="bi bi-quote"></i><h4>Rocio Vera</h4>
+                            <p>"Viajes accesibles? SI! Paquetes completos? Tambien! La mejor atención? Obvio! Patagonia Wanderlust damas y caballeros!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section" id="in-team">

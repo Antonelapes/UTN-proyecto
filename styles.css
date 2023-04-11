@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap');
+@import url(reviews.css);
 
 :root{
     --color-dark: #355780;
@@ -39,8 +41,6 @@ body{
     height: 100vh;
     width: 100%;
     min-width: var(--min-br);
-    /* TEST LIMITES DE CAJA*/
-    border: 2px crimson solid;
 }
 
 /* SECCIONES > TITULOS */
@@ -162,27 +162,6 @@ body{
 
 /* SECCION - DESTINOS */
 
-#destinations-title{
-    background-color: var(--color-white);
-}
-
-#destinations-title h2{
-    background-color: var(--color-dark);
-    color: var(--color-white);
-}
-
-.destinations-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.destinations-container>*{
-    margin: 20px;
-    border-radius: 20px;
-    background-color: var(--color-white);
-    color:var(--color-dark);
-}
-
 /* SECCION - SOBRE NOSOTROS */
 
 
@@ -216,36 +195,6 @@ body{
 
 
 /* SECCION - RESEÑAS */
-
-#in-reviews{
-
-}
-
-#reviews-title{
-    background-color: var(--color-white);
-}
-
-#reviews-title h2{
-    background-color: var(--color-dark);
-    color: var(--color-white);
-}
-
-.reviews-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.reviews-container>*{
-    height: 80%;
-    width: 22%;
-    margin: 20px auto;
-    border-radius: 20px;
-    background-color: var(--color-white);
-    text-align: center;
-    color:var(--color-dark);
-}
-
 
 /* SECCION - EQUIPO */
 
