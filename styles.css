@@ -139,7 +139,7 @@ body{
     justify-content: center;
     align-items: center;
     /* BG IMAGE */
-    background-image: url(./img/banner-bg.jpg);
+    background-image: url(./img/banner\ 2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
