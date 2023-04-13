@@ -1,0 +1,68 @@
+/* SECCION  */
+
+#in-about{
+
+}
+
+/* CONTENEDOR */
+
+.about-container{
+    min-height: min-content;
+    border: crimson 5px solid;
+}
+
+/* PRESENTACION EMPRESA */
+
+.presentacion-empresa{
+    height: 40%;
+    width: 80%;
+    border: orange 5px dotted;
+}
+
+/* INFO EMPRESA */
+
+.empresa-info{
+    height: 55%;
+    width: 80%;
+    border: orange 5px dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MISION - VISION - VALORES */
+.empresa-info > *{
+    height: 100%;
+    width: 100%;
+    border: yellowgreen 3px dashed;
+}
+
+.info-img{
+    height: 50%;
+    width: 100%;
+    border: cyan 3px dotted;
+}
+
+.info-p{
+    height: 50%;
+    width: 100%;
+    border: violet 3px dashed;
+}
+
+/* MISION */
+
+.empresa-mision{
+    
+}
+
+/* VISION */
+
+.empresa-vision{
+
+}
+
+/* VALORES */
+
+.empresa-valores{
+
+}

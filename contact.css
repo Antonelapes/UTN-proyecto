@@ -1,11 +1,9 @@
 .form-contacto {
+    height: 50%;
     width: 450px;
     margin: auto;
-    background: rgba(0, 0, 0, 0.3);
     padding: 10px 10px;
     margin-top: 10px;
-    border-radius: 20px;
-    border: #0f0e0e;
 }
 
 .form-contacto h3 {
@@ -58,10 +56,10 @@
 }
 
 .info-contacto{
-    height: 100%;
-    width: 100%;
-    
-
+    margin-top: 20%;
+    margin-bottom: 20px;
+    height: min-content;
+    width: min-content;
 }
 
 .info-contacto p{
@@ -72,12 +70,12 @@
 }
 
 .redes-sociales{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .redes-sociales i{
-height: 100%;
-width: 100%;
-margin: 10px 20px;
-
+    font-size: 30px;
+    margin: 10px 20px;
 }
