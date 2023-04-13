@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <script src="review.js" defer></script>
+    <script src="jquery.js" defer></script>
     <title>Patagonia Wanderlust</title>
 </head>
 <body>
@@ -36,63 +38,75 @@
         <div class="section-title" id="pck-title"><h2>Paquetes</h2></div>
         <div class="container" id="pck-container">
             <!-- PAQUETE 1 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq1_esqui-catedral.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Bariloche - Aventura en el Cerro Catedral</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Bariloche - Aventura en el Cerro Catedral</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>Es el centro de esquí más grande del hemisferio sur (1200 hectáreas esquiables) y ofrece una amplia infraestructura de servicios para la práctica de deportes invernales. Está abierto todo el año y cuenta con 32 medios de elevación.</p>
                 </div>
             </div>
             <!-- PAQUETE 2 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq2_conociendo-glaciares.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Calafate -Visitando los Glaciares</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Calafate - Visitando los Glaciares</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>El Parque Nacional Los Glaciares, posee atractivos turísticos como el glaciar Perito Moreno, y el cerro Fitz Roy, entre otros, todos propios de la región oriental del campo de hielo Patagónico Sur.</p>
                 </div>
             </div>
             <!-- PAQUETE 3 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq3_ruta-del-vino.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Mendoza - Transitando la ruta del vino</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Mendoza - Transitando la ruta del Vino</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>La bodega ofrece visitas informativas y profesionales de los viñedos, bodega y cava seguido por una degustación de vinos seleccionados.</p>
                 </div>
             </div>
             <!-- PAQUETE 4 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq4_mendoza-centro.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Mendoza - Conociendo la ciudad</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Mendoza - Conociendo la Ciudad</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>El calor de una fogata, la magia del momento. Con cada copa comienza una historia. El arte de un momento, el sabor de una copa y la magia de una experiencia.</p>
                 </div>
             </div>
             <!-- PAQUETE 5 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq5_canal-beagle.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Ushuaia - Navegando por el Canal Beagle</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Ushuaia - Navegando por el Canal Beagle</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>Navegar por el Canal es una experiencia necesaria en tu viaje a Ushuaia. En diferentes tipos de embarcaciones ya sea catamaranes, yates o veleros, vas a poder admirar la ciudad y su entorno desde otra perspectiva.</p>
                 </div>
             </div>
             <!-- PAQUETE 6 -->
-            <div class="pck-grid-card">
-                <div class="pck-card-top">
+            <div class="pck-grid-card pck-card-inactive" id="pck-card1">
+                <div class="pck-card-img">
                     <img src="./img/paq6_kayak-huapi.jpg" alt="">
-                    <div class="pck-card-bot">
-                        <h3>Bariloche - Kayak en el Nahuel Huapi</h3>
-                        <p></p>
-                    </div>
+                </div>
+                <div class="pck-card-h3">
+                    <h3>Bariloche - Kayak en el Huapi</h3>
+                </div>
+                <div class="pck-card-info">
+                    <p>Dentro del Parque Nacional Nahuel Huapi, existen variados lugares dónde se puede practicar el kayakismo. Se trata de una actividad apasionante que, puede ser realizada tanto por niños como por adultos.</p>
                 </div>
             </div>
         </div>

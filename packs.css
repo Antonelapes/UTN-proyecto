@@ -1,4 +1,8 @@
-/* TITULO */
+/* SECCION > TITULO */
+
+#in-packs{
+    height: min-content;
+}
 
 #pck-title{
     background-color: var(--color-white);
@@ -17,64 +21,125 @@
     z-index: 80;
 }
 
-/* CONTENEDOR */
+/* SECCION > CONTENEDOR */
 
 #pck-container{
+    height: min-content;
     min-height: 430px;
     padding: 15px 5px;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    /* background-color: pink; */
 }
 
 /* TARJETAS */
 
 .pck-grid-card{
-    margin: 0 auto;
-    height: 180px;
-    width: 250px;
-    /* background-color: coral; */
-    box-shadow: 0 1px 3px 1px #222;
     position: relative;
-    transition: all 0.5s;
-    /* overflow: hidden; */
+    margin: 8px auto;
+    height: 180px;
+    width: 240px;
+    box-shadow: 0 1px 3px 1px #222;
+    cursor: pointer;
 }
+
+/* HOVER */
 
 .pck-grid-card:hover{
-    transform: translateY(-20px);
-    box-shadow: 0 12px 10px 3px #222;
+   /*  */
 }
 
-.pck-card-top{
-    height: 180px;
+/* TARJETAS > CONTENEDORES */
+
+.pck-card-img{
+    height: 100%;
     width: 100%;
 }
 
-.pck-card-top img{
+.pck-card-h3{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+/* TARJETA > IMAGEN */
+
+.pck-card-img img{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
 
-.pck-card-bot{
-    position: absolute;
+/* TARJETA > TITULO */
+
+.pck-card-h3{
     bottom: 0px;
-    text-align: center;
-    height: 20px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, .5);
 }
 
-.pck-card-bot h3{
+.pck-card-h3 h3{
+    height: 20px;
     font-size: 11px;
 }
 
-.pck-card-active{
-    transform: translateY(-20px);
-    box-shadow: 0 12px 10px 3px #222;
+/* TARJETA > INFO */
+
+.pck-card-info{
+    position: absolute;
+    background-color: rgba(153, 201, 255, .7);
+    height: 0px;
+    width: 100%;
+    font-size: 9px;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.pck-card-bot p{
+.pck-card-info p{
+    font-weight: 500;
+    margin: 4px;
+}
 
+
+/* TARJETA > CLASE INACTIVA */ 
+
+.pck-card-inactive p{
+    display: none;
+}
+
+/* TARJETA > CLASE ACTIVA */
+
+.pck-card-active > *{
+    transform: translateY(-20px);
+    box-shadow: 0px 12px 10px 3px #222;
+}
+
+.pck-card-active .pck-card-info{
+    height: 80px;
+}
+
+.pck-card-info{
+    z-index: 90;
+}
+
+/* TRANSITIONS */
+
+.pck-grid-card > *{
+    transition: all 0.5s ease-in-out;
+}
+
+/* MEDIA */
+
+@media (max-width:823px) {
+    #pck-container{
+    max-width: 716px;
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pck-grid-card{
+        width: 320px;
+    }
 }
