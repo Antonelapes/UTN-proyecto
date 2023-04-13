@@ -48,3 +48,36 @@
     width: 100px;
     cursor: pointer;
 }
+
+/* lado izquierda del formulario */
+
+.footer-aside{
+    background-color: rgba(5, 7, 12, 0.2);
+    border-radius: 20px;
+    color: white;
+}
+
+.info-contacto{
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+.info-contacto p{
+    width: 100%;
+    font-size: 15px;
+    margin: 40px 15px;
+
+}
+
+.redes-sociales{
+
+}
+
+.redes-sociales i{
+height: 100%;
+width: 100%;
+margin: 10px 20px;
+
+}
