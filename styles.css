@@ -282,7 +282,7 @@ body{
     cursor: pointer;
 }
 
-form {
+#modal form {
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -291,27 +291,27 @@ form {
     gap: 20px;
 }
 
-.step {
+#modal .step {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 30px;
 }
 
-label {
+#modal label {
     margin-bottom: 10px;
 }
 
-input {
+#modal input {
     margin-bottom: 20px;
     min-height: 32px;
 }
 
-select {
+#modal select {
     min-height: 32px;
 }
 
-button {
+#modal button {
     align-self: flex-end;
     border-radius: 12px;
     padding: 8px 16px;
