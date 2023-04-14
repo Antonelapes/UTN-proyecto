@@ -2,7 +2,7 @@
 
 /* MOSTRAR INFORMACION DE PAQUETES */
 
-$(".pck-grid-card").hover(function(){
+$(".pck-grid-card").click(function(){
   if($(this).hasClass("pck-card-inactive")){
     $(".pck-card-active").toggleClass("pck-card-active pck-card-inactive");
     $(this).toggleClass("pck-card-active pck-card-inactive");
