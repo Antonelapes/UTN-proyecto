@@ -41,7 +41,7 @@ body{
 }
 
 .section{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     min-width: var(--min-br);
 }
@@ -67,7 +67,7 @@ body{
 
 .container{
     width: var(--w-general);
-    height: calc(100vh - var(--title-height));
+    min-height: calc(100vh - var(--title-height));
     margin: 0 auto;
 }
 
@@ -275,7 +275,7 @@ body{
 /* FOOTER */
 
 .in-footer{
-    height: calc( 100vh - var(--nav-height));
+    min-height: calc( 100vh - var(--nav-height));
     min-width: var(--min-br);
     padding-bottom: var(--nav-height);
     background: url(./img/fondo2.jpg);
