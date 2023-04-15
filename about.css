@@ -1,6 +1,8 @@
 /* SECCION  */
 
 #in-about{
+    height: 700px;
+  
 
 }
 
@@ -8,7 +10,8 @@
 
 .about-container{
     min-height: min-content;
-    border: crimson 5px solid;
+    margin: auto;  
+
 }
 
 /* PRESENTACION EMPRESA */
@@ -16,7 +19,7 @@
 .presentacion-empresa{
     height: 40%;
     width: 80%;
-    border: orange 5px dotted;
+    text-align: center
 }
 
 /* INFO EMPRESA */
@@ -24,34 +27,33 @@
 .empresa-info{
     height: 55%;
     width: 80%;
-    border: orange 5px dashed;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* MISION - VISION - VALORES */
 .empresa-info > *{
     height: 100%;
     width: 100%;
-    border: yellowgreen 3px dashed;
 }
 
 .info-img{
-    height: 50%;
+    height: 30%;
     width: 100%;
-    border: cyan 3px dotted;
 }
 
 .info-p{
-    height: 50%;
+    height: 80%;
     width: 100%;
-    border: violet 3px dashed;
+    text-align: center
 }
 
 /* MISION */
 
 .empresa-mision{
+ 
     
 }
 
