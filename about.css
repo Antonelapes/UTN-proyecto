@@ -2,16 +2,14 @@
 
 #in-about{
     height: 800px;
-  
-
+    
 }
 
 /* CONTENEDOR */
 
 .about-container{
     min-height: min-content;
-    margin: auto;  
-
+    margin: auto;   
 }
 
 /* PRESENTACION EMPRESA */
@@ -19,7 +17,8 @@
 .presentacion-empresa{
     height: 40%;
     width: 80%;
-    text-align: center
+    text-align: center;
+    margin: 20px 20px;
 }
 
 /* INFO EMPRESA */
@@ -30,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border: 10px;
 }
 
 /* MISION - VISION - VALORES */
@@ -44,9 +43,9 @@
     width: 200px;
     display: block;
     margin: auto;
-    
-
+    padding-top: 10%;
 }
+
 
 .info-p{
     height: 80%;
