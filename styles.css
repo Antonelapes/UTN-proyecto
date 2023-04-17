@@ -294,7 +294,7 @@ body{
 /* CONTACTO */
 
 .footer-aside{
-    height: 80%;
+    height: 450px;
     min-width: min-content;
     width: 380px;
     background: rgba(0, 0, 0, 0.3);
@@ -305,7 +305,7 @@ body{
 }
 
 #footer-contact{
-    height: 80%;
+    height: 450px;
     padding-bottom: 0;
     width:min-content;
     background: rgba(0, 0, 0, 0.3);
